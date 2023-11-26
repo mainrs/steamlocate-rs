@@ -120,9 +120,6 @@
 	clippy::print_stderr, clippy::print_stdout
 )]
 
-#[cfg(not(any(target_os = "windows", target_os = "macos", target_os = "linux")))]
-compile_error!("Unsupported operating system!");
-
 pub mod app;
 pub mod error;
 pub mod library;
